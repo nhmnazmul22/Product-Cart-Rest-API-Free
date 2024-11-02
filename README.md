@@ -4,14 +4,18 @@ The Product Cart API allows users to manage their product listings, view product
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/9518923/2sAXqwaLEB)
 ---
 #### 1. User Login
+
 URL: POST /api/user-login
+
 Request Body: 
+
 ```js
 {
   "UserEmail":"user@example.com"
 }
 ```
 Response
+
 ```js
 {
   "msg":"success",
@@ -22,6 +26,7 @@ Response
 
 #### 2. Verify Login
 URL: POST /api/verify-login
+
 Request Body:
 
 ```js
@@ -31,6 +36,7 @@ Request Body:
 }
 ```
 Response
+
 ```js
 {
   "msg": "success",
@@ -42,7 +48,9 @@ Response
 
 #### 3 Product Management
 URL: GET /api/product-list
+
 Response
+
 ```js
 {
   "msg": "success",
@@ -68,8 +76,11 @@ Response
 
 #### 4. Add Product to Cart
 URL: GET /api/create-cart/:product_id
+
 Headers: token: XXXXXXXXXXXXXXXXXXXXXXXXX
+
 Response: 
+
 ```js
 {
     "msg": "success",
@@ -84,8 +95,11 @@ Response:
 
 #### 4. Remove Product from Cart
 URL: GET /api/remove-cart/:product_id
+
 Headers: token: XXXXXXXXXXXXXXXXXXXXXXXXX
+
 Response: 
+
 ```js
 {
   "msg": "success",
@@ -97,7 +111,9 @@ Response:
 
 #### 5. List Cart Items
 URL: GET /api/cart-list
+
 Headers: token: XXXXXXXXXXXXXXXXXXXXXXXXX
+
 Response:
 ```js
 {
