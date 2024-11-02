@@ -3,9 +3,11 @@ The Product Cart API allows users to manage their product listings, view product
 ---
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/9518923/2sAXqwaLEB)
 ---
+####
+
 #### 1. User Login
 
-URL: POST /api/user-login
+URL: POST https://cart-api.teamrabbil.com/api/user-login
 
 Request Body: 
 
@@ -25,7 +27,7 @@ Response
 ---
 
 #### 2. Verify Login
-URL: POST /api/verify-login
+URL: POST https://cart-api.teamrabbil.com/api/verify-login
 
 Request Body:
 
@@ -47,7 +49,7 @@ Response
 ---
 
 #### 3 Product Management
-URL: GET /api/product-list
+URL: GET https://cart-api.teamrabbil.com/api/product-list
 
 Response
 
@@ -75,7 +77,7 @@ Response
 ---
 
 #### 4. Add Product to Cart
-URL: GET /api/create-cart/:product_id
+URL: GET https://cart-api.teamrabbil.com/api/create-cart/:product_id
 
 Headers: token: XXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -94,7 +96,7 @@ Response:
 ---
 
 #### 4. Remove Product from Cart
-URL: GET /api/remove-cart/:product_id
+URL: GET https://cart-api.teamrabbil.com/api/remove-cart/:product_id
 
 Headers: token: XXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -110,7 +112,7 @@ Response:
 ---
 
 #### 5. List Cart Items
-URL: GET /api/cart-list
+URL: GET https://cart-api.teamrabbil.com/api/cart-list
 
 Headers: token: XXXXXXXXXXXXXXXXXXXXXXXXX
 
